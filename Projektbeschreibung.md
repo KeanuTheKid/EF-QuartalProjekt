@@ -24,3 +24,6 @@ DIMENSION: 30cmx35cmx20cm
 |:------------------ |:-------------------| :-------------------|:------------------ |:-------------------| :-------------------| :-------------------|
 | Sämtliche Pläne herstellen            | Kasten fertigstellen              | Schaltung auf Breadboard zum laufen bringen, mögliche Orte im Kasten ausklügeln              | Bauteile im Gewächshaus fixieren und verlöten             | Code               | Code              | Debugging und Projekt samt Dokumentation fertigstellen              |
 ## Skizzen
+![x](IMG_0069)
+![x](IMG_0068)
+![x](IMG_0067)
