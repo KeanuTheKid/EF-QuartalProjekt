@@ -29,4 +29,4 @@ DIMENSION: 30cmx35cmx20cm
 ![x](IMG_0067.png)
 ##Preiszusammenstellung
 ![x](Play-Zone.CH 10 Stk. UV-LED im Transparenten Gehäuse 5mm 2023-02-10 07_26_31.png)
-![x]()
+![x](Warenkorb 2023-02-10 07_26_09.png)
