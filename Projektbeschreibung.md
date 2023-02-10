@@ -24,11 +24,14 @@ DIMENSION: 30cmx35cmx20cm
 |:------------------ |:-------------------| :-------------------|:------------------ |:-------------------| :-------------------| :-------------------|
 | Sämtliche Pläne herstellen            | Kasten fertigstellen              | Schaltung auf Breadboard zum laufen bringen, mögliche Orte im Kasten ausklügeln              | Bauteile im Gewächshaus fixieren und verlöten             | Code               | Code              | Debugging und Projekt samt Dokumentation fertigstellen              |
 ## Skizzen
+
 <img src="IMG_0069.png" width="50%" height="50%" />
 <img src="IMG_0068.png" width="50%" height="50%" />
 <img src="IMG_0067.png" width="50%" height="50%" />
-# Preiszusammenstellung
-<img src="bastelgarage.png" width="50%" height="50%" /> 
-<img src="uvled.png" width="50%" height="50%"/> |
-### Insgesamt 34.60CHF exclusive Arduino und Bausubstanz
 
+# Preiszusammenstellung
+
+<img src="bastelgarage.png" width="50%" height="50%" /> 
+<img src="uvled.png" width="50%" height="50%"/>
+
+### Insgesamt 34.60CHF exclusive Arduino und Bausubstanz
