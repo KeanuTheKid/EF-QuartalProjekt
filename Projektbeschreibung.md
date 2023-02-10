@@ -24,9 +24,11 @@ DIMENSION: 30cmx35cmx20cm
 |:------------------ |:-------------------| :-------------------|:------------------ |:-------------------| :-------------------| :-------------------|
 | Sämtliche Pläne herstellen            | Kasten fertigstellen              | Schaltung auf Breadboard zum laufen bringen, mögliche Orte im Kasten ausklügeln              | Bauteile im Gewächshaus fixieren und verlöten             | Code               | Code              | Debugging und Projekt samt Dokumentation fertigstellen              |
 ## Skizzen
-![x](IMG_0069.png)
-![x](IMG_0068.png)
-![x](IMG_0067.png)
-##Preiszusammenstellung
-![x](Play-Zone.CH 10 Stk. UV-LED im Transparenten Gehäuse 5mm 2023-02-10 07_26_31.png)
-![x](Warenkorb 2023-02-10 07_26_09.png)
+<img src="IMG_0069.png" width="50%" height="50%" />
+<img src="IMG_0068.png" width="50%" height="50%" />
+<img src="IMG_0067.png" width="50%" height="50%" />
+# Preiszusammenstellung
+<img src="bastelgarage.png" width="50%" height="50%" /> 
+<img src="uvled.png" width="50%" height="50%"/> |
+### Insgesamt 34.60CHF exclusive Arduino und Bausubstanz
+
