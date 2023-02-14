@@ -9,7 +9,7 @@ Die Pflanzen sollen in dem Kasten stehen mit den Sensoren an gegebenden Plätzen
 * Servomotor, welcher auf Befehl eine Lucke öffnet um Frischluft in den Kasten zu bringen (Gesteuert vom Luftfeuchtigkeitsmesser?)
 ### Gewächshaus
 Ein selbstgebauter Kasten (Holz, Plastik oder Karton) in dem 1-3 Pflänzchen Platz haben, Sonne abbekommen können und mehr oder weniger sicher sind. 
-DIMENSION: 30cmx35cmx20cm
+DIMENSION: 20cmx24cmx18cm
 ### Sensoren
   * Feuchtigkeitssensor
   * Bodenfeuchtesensor
