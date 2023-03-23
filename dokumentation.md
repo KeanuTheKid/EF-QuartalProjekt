@@ -51,7 +51,7 @@ Diese Woche habe ich schon einigen Code geschrieben, der mit Hilfe der Feuchtigk
 ## Stand 14.03.2023
 Heute war ein höchst erfolgreicher Tag, denn ich hatte eine funktionierende Schaltung auf dem Breadboard und einen funktionierenden Code bereits vorbereitet. Sobald die Feuchtigkeitssensoren einen Wert unter 500 senden, läuft die Pumpe bis sie wieder über 500 sind, um den Topf immer gleich feucht zu halten. Außerdem gehen UV-LEDs an, sobald nicht ausreichend Sonnenlicht einfällt.
 
-```
+``` C++
 #include <Wire.h>
 #include <BH1750.h>
 unsigned long pTime = 0;
@@ -144,7 +144,7 @@ Um das Projekt zu verbessern, müsste man nochmal alle Teile auf dem Breadboard 
 
 # Code 
 
-```
+```C++
 #include <Wire.h>
 #include <BH1750.h>
 #include "DHT.h"
