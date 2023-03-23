@@ -1,6 +1,5 @@
-### Dokumentation
-# EF-QuartalProjekt
-Smartgarden für heranwachsende Pflanzenbabys
+# Dokumentation - EF-QuartalProjekt
+Smartgarden für her anwachsende Pflanzenbabys
 ## Abstract 
 Es handelt sich bei dem Projekt um ein kleines Gewächshaus welches mit Sensoren ausgestattet ist welche, Feuchtigkeit, Wasserzufuhr und Sonnenlicht messen und dem entsprechend Wasser oder Licht supplimieren um der Pflanze die best möglichen Chancen zum aufwachsen geben. Die Statistiken sollen auf einem LCD-Bildschirm zu sehen sein.
 ## Projekt im Detail
@@ -15,7 +14,7 @@ Die Pflanzen sollen in dem Kasten stehen mit den Sensoren an gegebenden Plätzen
   * UV Lichtstreifen
   * LCD - Display
 
-## Zeitplannung
+# Zeitplannung
  | QW2 | QW3 | QW4 | QW5 | QW6 | QW7 | QW8 |
 |:------------------ |:-------------------| :-------------------|:------------------ |:-------------------| :-------------------| :-------------------|
 | Sämtliche Pläne herstellen            | Kasten fertigstellen              | Schaltung auf Breadboard zum laufen bringen, mögliche Orte im Kasten ausklügeln              | Bauteile im Gewächshaus fixieren und verlöten             | Code               | Code              | Debugging und Projekt samt Dokumentation fertigstellen              |
@@ -25,6 +24,7 @@ Die Pflanzen sollen in dem Kasten stehen mit den Sensoren an gegebenden Plätzen
 <img src="IMG_0068.png" width="50%" height="50%" />
 <img src="IMG_0067.png" width="50%" height="50%" />
 
+# Logbuch
 ## Stand 07.02.2023
 Sämtliche Komponenten, die es möglicherweise braucht, und Ideen wurden niedergeschrieben. Schwierigkeiten die sicher noch bevor stehen werden ist es eine geeignete Pumpe zu finden, welche nicht zu viel Strom und Platz benötigt. Ausserdem ist das Design so wie es skizziert wurde zu unhandlich und zu gross in dieser Zeit zu verwirklichen. Neue Dimensionen: 100mm x 200mm x 140-200mm
 
@@ -56,6 +56,105 @@ Um auf das Problem der letzten Woche zurückzukommen habe ich alle meine Notizen
 ## Stand 14.03.2023
 Heute war ein höchst erfolgreicher Tag, denn ich hatte eine funktionierende Schaltung auf dem Breadboard und einen funktionierenden Code breits vorbereitet. 
 Sobald die Feuchtigkeitssenoren einen Wert unter 500 sendet, läuft die Pumpe bis sie wieder über 500 sind, um den Topf immer gleich feucht zu halten. Ausserdem gehen UV-LEDs an sobald nicht ausreichend Sonnenlicht einfällt. Ich war sehr zufrieden mit meiner Arbeit und fuhr fort mit dem Modellieren eines Gehäuses, dafür experimentierte ich mit einem Lasercutter und lernte wie man Boxen mit Puzzelkanten ausschneidet und schön mit Gravierungen verziehrt
-<img src="gehäuse_(3).HEIC" width="50%" height="50%" />
-<img src="gehäuse_(4).HEIC" width="50%" height="50%" />
-<img src="gehäuse_(5).HEIC" width="50%" height="50%" />
+<img src="gehäuse_(3).jpg" width="50%" height="50%" />
+<img src="gehäuse_(4).jpg" width="50%" height="50%" />
+<img src="gehäuse_(5).jpg" width="50%" height="50%" />
+
+## Stand 21.03.2023 
+Ich habe das Gehäuse fertig ausgeschnitten und war nun Bereit alles zu verlöten und verpacken. Das Verlöten brachte mir viele Probleme, da es schwierig war den Überblick zu waren und gleichzeit sämtliche Schaltpläne zu verfolgen. Am Ende des Tages hatte ich zwar ein schönes Gehäuse aber die Kommunikation des Arduino funktionierte nicht mehr. Sämtliche Print-Befehle wurde ignoriert obwohl alles zu funktieren schien. 
+## Stand 22.03.2023
+Ich habe sämtliche Verbindungen gekappt, um das Problem zu finden. Ich fand keines. Alle Leitungen leiteten richtig und es stand nun aus, dass ich die falschen Pins angesteuert habe. Ich fand mich damit ab, dass dieser Problem nicht in nächster Zeit gelöst werden würde und fing trotzdem an es provisorisch ein zu packen, um es nach der Deadline nochmal korrigieren zu können. 
+## Stand 23.03.2023
+Heute am Morgen ging es darum alles fest und sauber zu machen. Ich habe meinen Code nach den Kriterien gesäubert und unnötige Dinge gelöscht. Das Gehäuse habe ich mit Heissleim verklebt und den Deckel bloss mit Kabelbindern festgemacht, damit man es noch erreichen kann. 
+
+# Reflexion 
+In diesem Quartal habe ich viel gelernt und bin sehr selbstständig geworden. Das Lernen wie man Komponenten richtig Benutzt vieles ging schnell auch wenn ich viele komplett verschiedene Teile in meiner Schaltung eingebaut hatte von denen es oft nur mangelnde Informationen gab. Was weniger gut lief und auch ausschlaggebend auf meine Niederlage war das Arbeiten mit Lötzin und Kupfer. Ich hatte dies zuvor nie richtig gemacht und war deshalb noch nicht professionel damit und die Zeit um genügend zu üben. Im grossen und Ganzen kann man aber sagen, dass ich sehr zufrieden bin zum einen mit meiner Arbeit und und zum anderen wie ich gearbeitet habe. Um das Projekt zu verbessern müsste man nochmal alle Teile auf dem Breadboard aufbauen, um mögliche defekte festzustellen. Ausserdem würde ich beim nächsten Mal eine Art Gewächshaus errichten, da es zum einen besser aussehen würde und zum anderen sicherer vor äusseren Faktoren ist. Neben diesem Feature würde ich ein Programm hinzufügen, welches verschiedene Konfigurationen gespeichert hat, da nicht jede Pflanze gleichviel Nährstoffe oder Licht benötigt. 
+
+
+# Code 
+
+`
+#include <Wire.h>
+#include <BH1750.h>
+#include "DHT.h"
+
+// Constants
+const unsigned long INTERVAL = 1000 * 3;
+const int PLANT_LIGHT = 1000;
+const int PLANT_TIMER = 1000 * 60 * 6;
+const int FEUCHT_PIN = A2;
+const int DHT_TYPE = DHT11;
+const int SENSOR2_PIN = A4;
+const int SENSOR3_PIN = A3;
+const int PUMP_PIN = 12;
+const int SCL_PIN = 2;
+const int SDA_PIN = 3;
+const int LED_PIN = 6;
+
+// Global variables
+unsigned long previousTime = 0;
+int sensor2 = 0;
+int sensor3 = 0;
+
+// Objects
+DHT dht(FEUCHT_PIN, DHT_TYPE);
+BH1750 lightMeter;
+
+void setup() {
+  Serial.begin(9600);
+  dht.begin();
+  lightMeter.begin();
+  pinMode(SENSOR2_PIN, INPUT);
+  pinMode(SENSOR3_PIN, INPUT);
+  pinMode(PUMP_PIN, OUTPUT);
+  pinMode(SCL_PIN, INPUT);
+  pinMode(SDA_PIN, INPUT);
+  pinMode(LED_PIN, OUTPUT);
+}
+
+void loop() {
+  Serial.print("hello");
+  unsigned long currentTime = millis();
+ 
+  if (currentTime - previousTime >= INTERVAL) {
+    previousTime = currentTime;
+    uint16_t lux = lightMeter.readLightLevel();
+    float humidity = dht.readHumidity();
+    float temperature = dht.readTemperature();
+
+    sensor2 = analogRead(SENSOR2_PIN);
+    sensor3 = analogRead(SENSOR3_PIN);
+
+    Serial.print("Soil: ");
+    Serial.print(sensor2);
+    Serial.print(", ");
+    Serial.print(sensor3);
+    Serial.println();
+
+    Serial.print("Humidity: ");
+    Serial.print(humidity);
+    Serial.println("%");
+
+    Serial.print("Temperature: ");
+    Serial.print(temperature);
+    Serial.println("°C");
+
+    Serial.print("Light: ");
+    Serial.print(lux);
+    Serial.println("lx");
+
+    if (sensor2 < 500 && sensor3 < 500) {
+      digitalWrite(PUMP_PIN, HIGH);
+      Serial.print("allo");
+    } else {
+      digitalWrite(PUMP_PIN, LOW);
+    }
+
+    if (lux <= PLANT_LIGHT) {
+      digitalWrite(LED_PIN, HIGH);
+    } else {
+      digitalWrite(LED_PIN, LOW);
+    }
+  }
+}
+`
