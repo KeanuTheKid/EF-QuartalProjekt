@@ -121,9 +121,13 @@ Ich war sehr zufrieden mit meiner Arbeit und fuhr fort mit dem Modellieren eines
 
 ## Stand 21.03.2023 
 Entspurt! Ich habe das Gehäuse fertig ausgeschnitten und war nun bereit, alles zu verlöten und zu verpacken. Das Verlöten brachte mir viele Probleme, da es schwierig war, den Überblick zu wahren und gleichzeitig sämtliche Schaltpläne zu verfolgen. Am Ende des Tages hatte ich zwar ein schönes Gehäuse, aber die Kommunikation des Arduino funktionierte nicht mehr. Sämtliche Print-Befehle wurden ignoriert, obwohl alles zu funktionieren schien.
+
+<img src="geklemmt.jpeg" width="50%" height="50%" />
+                                                
 ## Stand 22.03.2023
 Ich habe sämtliche Verbindungen gekappt, um das Problem zu finden. Ich fand keines. Alle Leitungen leiteten richtig und es stand nun fest, dass ich auf keinen Fall die falschen Pins angesteuert habe. Ich fand mich damit ab, dass dieses Problem nicht in nächster Zeit gelöst werden würde, und fing trotzdem an, es provisorisch einzupacken, um es nach der Deadline nochmal korrigieren zu können.
 
+<img src="löten.jpeg" width="50%" height="50%" />
 
 ## Stand 23.03.2023
 Heute am Morgen ging es darum, alles fest und sauber zu machen. Ich habe meinen Code nach den Kriterien gesäubert und unnötige Dinge gelöscht. Das Gehäuse habe ich mit Heißleim verklebt und den Deckel bloß mit Kabelbindern festgemacht, damit man es noch erreichen kann.
