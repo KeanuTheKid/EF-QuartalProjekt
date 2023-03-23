@@ -132,7 +132,7 @@ Ich habe sämtliche Verbindungen gekappt, um das Problem zu finden. Ich fand kei
 <img src="löten.jpeg" width="50%" height="50%" />
 
 ## Stand 23.03.2023
-Heute am Morgen ging es darum, alles fest und sauber zu machen. Ich habe meinen Code nach den Kriterien gesäubert und unnötige Dinge gelöscht. Das Gehäuse habe ich mit Heißleim verklebt und den Deckel bloß mit Kabelbindern festgemacht, damit man es noch erreichen kann.
+Heute am Morgen ging es darum, alles fest und sauber zu machen. Ich habe meinen Code nach den Kriterien gesäubert und unnötige Dinge gelöscht. Das Gehäuse habe ich mit Heißleim verklebt und den Deckel bloß mit Kabelbindern festgemacht, damit man das Innenleben noch erreichen kann.
 
 # Reflexion 
 In diesem Quartal habe ich viel gelernt und bin sehr selbstständig geworden. Das Lernen, wie man Komponenten richtig benutzt, ging schnell, auch wenn ich viele komplett verschiedene Teile in meiner Schaltung eingebaut hatte, von denen es oft nur mangelnde Informationen gab. Was weniger gut lief und auch ausschlaggebend auf meine Niederlage war, war das Arbeiten mit Lötzinn und Kupfer. Ich hatte dies zuvor nie richtig gemacht und war deshalb noch nicht professionell damit und hatte nicht genug Zeit, um genügend zu üben. Im Großen und Ganzen kann man aber sagen, dass ich sehr zufrieden bin, zum einen mit meiner Arbeit und zum anderen, wie ich gearbeitet habe.
