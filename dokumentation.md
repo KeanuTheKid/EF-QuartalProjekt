@@ -1,5 +1,5 @@
 # Dokumentation - EF-QuartalProjekt
-Smartgarden für her anwachsende Pflanzenbabys
+Smartgarden für heranwachsende Pflanzenbabys
 ## Abstract 
 Es handelt sich bei dem Projekt um ein kleines Gewächshaus, welches mit Sensoren ausgestattet ist, welche Feuchtigkeit, Wasserzufuhr und Sonnenlicht messen und dementsprechend Wasser oder Licht zuführen, um der Pflanze die bestmöglichen Chancen zum Aufwachsen zu geben. 
 ## Projekt im Detail
