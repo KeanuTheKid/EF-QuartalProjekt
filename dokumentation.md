@@ -126,7 +126,9 @@ Entspurt! Ich habe das Gehäuse fertig ausgeschnitten und war nun bereit, alles 
                                                 
 ## Stand 22.03.2023
 Ich habe sämtliche Verbindungen gekappt, um das Problem zu finden. Ich fand keines. Alle Leitungen leiteten richtig und es stand nun fest, dass ich auf keinen Fall die falschen Pins angesteuert habe. Ich fand mich damit ab, dass dieses Problem nicht in nächster Zeit gelöst werden würde, und fing trotzdem an, es provisorisch einzupacken, um es nach der Deadline nochmal korrigieren zu können.
-
+<img src="pump.PNG" width="50%" height="50%" />
+<img src="light.PNG" width="50%" height="50%" />
+<img src="feucht.PNG" width="50%" height="50%" />
 <img src="löten.jpeg" width="50%" height="50%" />
 
 ## Stand 23.03.2023
@@ -228,5 +230,5 @@ void loop() {
     }
   }
 }
-//Falls dieser Code fehler haben sollte,  bitte den schmutzigen alten code benutzen
+//Falls dieser Code Fehler haben sollte,  bitte den schmutzigen alten Code benutzen
 ```
