@@ -186,7 +186,6 @@ void setup() {
 }
 
 void loop() {
-  Serial.print("hello");
   unsigned long currentTime = millis();
  
   if (currentTime - previousTime >= INTERVAL) {
@@ -217,8 +216,7 @@ void loop() {
     Serial.println("lx");
 
     if (sensor2 < 500 && sensor3 < 500) {
-      digitalWrite(PUMP_PIN, HIGH);
-      Serial.print("allo");
+      digitalWrite(PUMP_PIN, HIGH);     
     } else {
       digitalWrite(PUMP_PIN, LOW);
     }
